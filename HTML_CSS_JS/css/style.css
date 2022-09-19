@@ -1,0 +1,17 @@
+p{
+    color:palevioletred;
+    background:aliceblue;
+    font-size:45px;
+    font-style:italic;
+}
+
+.box{
+    width:200px;
+    height:100px;
+    background:hotpink;
+    margin:10px;
+    padding:10px;
+    border:10px solid plum;
+    float:left;
+    position:relative;
+}
