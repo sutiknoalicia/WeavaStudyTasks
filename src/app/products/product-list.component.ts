@@ -47,6 +47,8 @@ export class ProductListComponent implements OnInit {
     },
   ];
 
+  onNotify(message: string): void{ }
+  
   toggleImage(): void {
     this.showImage = !this.showImage;
   }
@@ -61,5 +63,9 @@ export class ProductListComponent implements OnInit {
     return this.products.filter((product: IProduct) =>
       product.productName.toLocaleLowerCase().includes(this.listFilter)
     );
+  }
+
+  onRatingClicked(message: string):void {
+    this.pageTitle = 'Product List: ' + message;
   }
 }
